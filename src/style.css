@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.woff') format('woff2');
+  font-weight: 400;
+  font-style:bolder;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('./fonts/HelveticaNowDisplay-Regular.woff2') format('woff2');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Helvetica Now Display', sans-serif;
+}
+
+img{
+  opacity: 0;
+}
+
+
+.btn-1:hover{
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+}
+
+.project:hover .project_part{
+  color: #fe3928;
+  transition: all 0.3s ease-in-out;
+}
+
+.uLine::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000000;
+  transition: width .3s;
+}
+
+.uLine:hover::after{
+  width: 100%;
+}
+
+.redToo:hover{
+  color: #fe3928;
+  transition: all 0.3s ease-in-out;
+
+}
+
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  color: #000;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.loader-mobile h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.loader-timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  display: flex;
+  align-items: baseline;
+}
+
+/* =========================
+   MOBILE (Tablets & Phones)
+   ========================= */
+   @media (max-width: 768px) {
+
+    .loader-timer {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 400;
+      display: flex;
+      align-items: baseline;
+    }
+
+    /* NAVIGATION */
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      position: relative;
+    }
+
+    nav .hide{
+      display: none;
+    }
+  
+    nav .flex {
+      margin: 0 !important;
+    }
+  
+    nav a {
+      font-size: 14px;
+    }
+  
+    /* LANDING BRANDING IMAGE */
+    .branding img {
+      margin-top: 5rem;
+    }
+  
+    /* VIDEO SECTION */
+    .video {
+      height: 60vh;
+      margin-top: 2rem;
+    }
+  
+    .video button {
+      padding: 1.5rem 1.2rem;
+      font-size: 14px;
+    }
+  
+    /* WORK SECTION */
+    .work {
+      flex-direction: column;
+    }
+  
+    .work > div {
+      width: 100% !important;
+    }
+  
+    .mainflex {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .paraMain {
+      width: 100% !important;
+      font-size: 22px;
+    }
+  
+    .year {
+      font-size: 22px;
+    }
+  
+    /* PROJECTS */
+    .project {
+      flex-direction: column;
+      gap: 1.5rem !important;
+    }
+  
+    .project h4,
+    .project h1,
+    .project div {
+      width: 100% !important;
+    }
+  
+    .project h1 {
+      font-size: 22px;
+    }
+  
+    .project h3 {
+      font-size: 22px;
+    }
+  
+    .projects {
+      margin-top: 4rem !important;
+    }
+  
+    /* STUDIO SECTION */
+    .studio > div:first-child {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .studio p {
+      width: 100% !important;
+      font-size: 22px;
+    }
+  
+    .studio .flex.w-full {
+      flex-direction: column;
+    }
+  
+    .studio .flex.w-full > div {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  
+    .studio img {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  
+    .studio .mt-\[8rem\] {
+      margin-top: 3rem !important;
+    }
+  
+    .studio .ml-\[20rem\] {
+      margin-left: 0 !important;
+    }
+  
+    .studio .pl-4 {
+      padding-left: 0 !important;
+      border-left: none !important;
+    }
+  
+    .studio a {
+      font-size: 22px;
+    }
+  
+    /* HEADINGS */
+    h1, h3 {
+      font-size: 22px !important;
+    }
+  
+    h4 {
+      font-size: 22px !important;
+    }
+
+    .gapp{
+      margin-top: 2rem;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
