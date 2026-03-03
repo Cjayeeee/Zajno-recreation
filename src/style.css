@@ -91,6 +91,11 @@ img{
    ========================= */
    @media (max-width: 768px) {
 
+    img{
+      opacity: 1;
+    }
+    
+
     .loader-timer {
       position: absolute;
       top: 55%;
