@@ -511,7 +511,7 @@ let counter = { value: 0 }
 
 gsap.to(counter, {
   value: 100,
-  duration: isMobile ? 1.2 : 2.5, // faster on mobile
+  duration: isMobile ? 2.5 : 2.5, // faster on mobile
   ease: "power1.out",
   onUpdate: () => {
     document.getElementById("loader-timer-number").textContent =
